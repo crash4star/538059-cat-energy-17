@@ -1,0 +1,36 @@
+[33mcommit 8ad72183933622b417e19d854e52470746068f7d[m[33m ([m[1;36mHEAD -> [m[1;32mmodule2-task1[m[33m)[m
+Author: crash4star <crashmoney@yandex.ru>
+Date:   Tue Jul 16 22:32:18 2019 +0300
+
+    Второе задание
+
+[33mcommit 0c4e55660d6c6718c7cffda94f5d99e8ae75aab2[m[33m ([m[1;31morigin/module2-task1[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Mon Jul 15 23:39:26 2019 +0300
+
+    :kissing_cat: Добавляет сборку Less на Gulp
+
+[33mcommit e2538d31134e4707ce0e568c9f51fbcabc1bee33[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Mon Jul 15 23:39:20 2019 +0300
+
+    :gift: Нарезает графику для вёрстки
+
+[33mcommit 7a9600d2bea9cce2f1c0b54fdbe853199382bc52[m
+Merge: 2115e25 3230aec
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Mon Jul 15 09:41:26 2019 +0300
+
+    Merge pull request #1 from crash4star/module1-task1
+
+[33mcommit 3230aec478ac2fe3c9e74c2b5bd2a34f917dd832[m[33m ([m[1;31morigin/module1-task1[m[33m)[m
+Author: crash4star <47321264+crash4star@users.noreply.github.com>
+Date:   Sun Jul 14 23:07:49 2019 +0300
+
+    Первое задание
+
+[33mcommit 2115e25480b09b3592541933d37ca301b35899bf[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Jul 9 17:50:31 2019 +0300
+
+    :hatching_chick:
