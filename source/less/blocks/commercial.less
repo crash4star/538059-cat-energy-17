@@ -1,0 +1,84 @@
+.commercial {
+  min-height: 480px;
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+}
+
+.commercial__big-headline {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.commercial__small-description {
+  .middle-up-text ();
+}
+
+.commercial__choice-program {
+  .basic-btn ();
+}
+
+.commercial__tablet-image {
+    display: none;
+  }
+
+@media (min-width: 768px) {
+  .commercial {
+    position: relative;
+    width: 728px;
+    background-image: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .commercial__big-headline {
+    width: 60%;
+    color: #111111;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 30px;
+  }
+
+  .commercial__small-description {
+    width: 40%;
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 20px;
+  }
+
+  .commercial__mobile-image {
+    display: none;
+  }
+
+  .commercial__tablet-image {
+    display: block;
+  }
+
+  .commercial__choice-program {
+    width: 245px;
+    position: absolute;
+    top: 260px;
+    left: 120px;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}

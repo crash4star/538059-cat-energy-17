@@ -1,0 +1,39 @@
+.main-nav__page-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    min-height: 45px;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.main-nav__item {
+  font-size: 20px;
+  line-height: 20px;
+  color: #111111;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+  .main-nav__page-list {
+    display: flex;
+    li {
+      min-height: 0;
+      padding: 0;
+      margin-right: 35px;
+    }
+    li:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .main-nav__item {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

@@ -8,28 +8,22 @@ body {
   font-style: normal;
 }
 
+
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-body > * {
-  outline: 1px solid purple;
-}
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/commercial.less";
+@import "blocks/feed.less";
+@import "blocks/info.less";
+@import "blocks/main-footer.less";
+@import "blocks/feed-types.less";
+@import "blocks/more-feed.less";
+@import "blocks/catalog-list.less";
+@import "blocks/mix.less";
 
-body > * > * {
-  outline: 1px solid lightblue;
-}
-
-body > * > * > * {
-  outline: 1px solid cyan;
-}
-
-@import "page-header.less";
-@import "variables-mix-mobile.less";
-@import "commercial.less";
-@import "feed.less";
-@import "info.less";
-@import "main-footer.less";
-@import "feed-types.less";
 
