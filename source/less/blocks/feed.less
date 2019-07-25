@@ -7,6 +7,33 @@
 
 .feed__block {
   .block ();
+  margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .feed {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .feed__block {
+    padding: 0;
+    min-height: 372px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .feed {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .feed__block {
+    width: 570px;
+  }
+}
 
