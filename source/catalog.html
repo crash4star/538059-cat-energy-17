@@ -10,12 +10,15 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="#" class="page-header__logo-image" width="33" height="38" alt="Логотип Cat Energy">
-    </a>
-    <img src="#" class="page-header__text-image" width="101" height="18" alt="Тектовый логотип Cat Energy">
-    <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-    <button class="page-header__toggle--close" type="button" aria-label="Закрыть меню"></button>
+    <div class="page-header__upper">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo-mobile.svg" class="page-header__logo-mobile" width="191" height="39" alt="Логотип Cat Energy">
+        <img src="img/logo-tablet.svg" class="page-header__logo-tablet" width="173" height="58" alt="Логотип Cat Energy">
+        <img src="img/logo-desktop.svg" class="page-header__logo-desktop" width="202" height="59" alt="Логотип Cat Energy">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle--close" type="button" aria-label="Закрыть меню"></button>
+    </div>
     <nav class="main-nav">
       <ul class="main-nav__page-list">
         <li>
@@ -181,25 +184,33 @@
           </table>
           <a href="#" class="catalog-list__buy-feed">Заказать</a>
         </li>
+        <li class="catalog-list__item-feed">
+          <p class="more-feed__view-more">Показать еще 100500 товаров</p>
+          <p class="more-feed__info-text">На самом деле вкусов гораздо больше!</p>
+          <a href="#" class="more-feed__view-more-btn">Показать все</a>
+        </li>
       </ul>
-      <div class="more-feed">
-        <p class="more-feed__view-more">Показать еще 100500 товаров</p>
-        <p class="more-feed__info-text">На самом деле вкусов гораздо больше!</p>
-        <a href="#" class="more-feed__view-more-btn">Показать все</a>
-      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <img src="#" class="page-header__text-image" width="101" height="18" alt="Тектовый логотип Cat Energy">
-    <div class="social">
-      <a href="#" class="social__vk">Вконтакте</a>
-      <a href="#" class="social__instagram">Instagram</a>
-      <a href="#" class="social__facebook">Facebook</a>
+    <a href="#" class="social-link__vk">
+      <img class="social__vk-image" src="img/icon-vk.svg" width="22" height="12" alt="Вконтакте">
+    </a>
+    <div class="main-footer_social social-link">
+      <a href="#" class="social-link__vk">
+        <img class="social__vk-image" src="img/icon-vk.svg" width="22" height="12" alt="Вконтакте">
+      </a>
+      <a href="#" class="social-link__instagram">
+        <img class="social__instagram-image" src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
+      </a>
+      <a href="#" class="social-link__facebook">
+        <img class="social__facebook-image" src="img/icon-fb.svg" width="10" height="19" alt="Фэйсбук">
+      </a>
     </div>
-    <div class="academy">
+    <div class="main-footer__academy academy">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__level-two">
         <p class="academy__text-name">HTML Academy</p>
-        <img src="#" class="academy__logo-picture" width="27" height="34" alt="Логотип HTML Academy">
+        <img src="img/htmlacademy.svg" class="academy__logo-picture" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>

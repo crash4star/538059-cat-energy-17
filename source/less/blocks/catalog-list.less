@@ -12,3 +12,26 @@
   .basic-btn ();
 }
 
+@media (min-width: 768px) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item-feed {
+      width: 324px;
+      min-height: 515px;
+      margin-bottom: 95px;
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .catalog-list__item-feed {
+    width: 245px;
+    min-height: 510px;
+  }
+
+  .catalog-list__buy-feed {
+    width: 169px;
+  }
+}
