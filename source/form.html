@@ -10,16 +10,16 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__upper">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/logo-mobile.svg" class="page-header__logo-mobile" width="191" height="39" alt="Логотип Cat Energy">
-        <img src="img/logo-tablet.svg" class="page-header__logo-tablet" width="173" height="58" alt="Логотип Cat Energy">
-        <img src="img/logo-desktop.svg" class="page-header__logo-desktop" width="202" height="59" alt="Логотип Cat Energy">
-      </a>
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-      <button class="page-header__toggle--close" type="button" aria-label="Закрыть меню"></button>
-    </div>
     <nav class="main-nav">
+      <div class="main-nav__upper">
+        <a class="main-nav__logo">
+          <img src="img/logo-mobile.svg" class="main-nav__logo-mobile" width="191" height="39" alt="Логотип Cat Energy">
+          <img src="img/logo-tablet.svg" class="main-nav__logo-tablet" width="173" height="58" alt="Логотип Cat Energy">
+          <img src="img/logo-desktop.svg" class="main-nav__logo-desktop" width="202" height="59" alt="Логотип Cat Energy">
+        </a>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <button class="main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button>
+      </div>
       <ul class="main-nav__page-list">
         <li>
           <a href="index.html" class="main-nav__item">Главная</a>
@@ -34,27 +34,26 @@
     </nav>
   </header>
   <footer class="main-footer">
-    <img src="img/logo-footer.svg" class="main-footer__text-image" width="101" height="18" alt="Тектовый логотип Cat Energy">
-    <div class="main-footer_social social-link">
-      <a href="#" class="social-link__vk">
-        <img class="social__vk-image" src="img/icon-vk.svg" width="22" height="12" alt="Вконтакте">
-      </a>
-      <a href="#" class="social-link__instagram">
-        <img class="social__instagram-image" src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
-      </a>
-      <a href="#" class="social-link__facebook">
-        <img class="social__facebook-image" src="img/icon-fb.svg" width="10" height="19" alt="Фэйсбук">
-      </a>
-    </div>
-    <div class="main-footer__academy academy">
-      <a href="#" class="social-link__vk">
-        <img class="social__vk-image" src="img/icon-vk.svg" width="22" height="12" alt="Вконтакте">
-      </a>
-      <a>
-        <p class="academy__text-name">HTML Academy</p>
-        <img src="img/htmlacademy.svg" class="academy__logo-picture" width="27" height="34" alt="Логотип HTML Academy">
-      </a>
-    </div>
+    <section class="footer-content">
+      <img src="#" class="footer-content__logo-desktop" width="202" height="59" alt="Логотип Cat Energy">
+      <div class="footer-content social-link">
+        <a href="#" class="social-link__vk">
+          <img class="social__vk-image" src="img/icon-vk.svg" width="22" height="12" alt="Вконтакте">
+        </a>
+        <a href="#" class="social-link__instagram">
+          <img class="social__instagram-image" src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
+        </a>
+        <a href="#" class="social-link__facebook">
+          <img class="social__facebook-image" src="img/icon-fb.svg" width="10" height="19" alt="Фэйсбук">
+        </a>
+      </div>
+      <div class="main-footer__academy academy">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__level-two">
+          <p class="academy__text-name">HTML Academy</p>
+          <img src="img/htmlacademy.svg" class="academy__logo-picture" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </section>
   </footer>
 </body>
 
