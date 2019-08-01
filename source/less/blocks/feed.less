@@ -12,7 +12,8 @@
   margin-bottom: 20px;
 }
 
-.feed__block-title {
+.feed__block-title,
+.feed__block-title--pro {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -24,6 +25,51 @@
   margin-bottom: 30px;
   margin-left: 70px;
 }
+
+.feed__block-title::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.feed__block-title::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 22px;
+  width: 50px;
+  height: 53px;
+  background-image: url(../img/icon-cat-slim.svg);
+  background-repeat: no-repeat;
+}
+
+.feed__block-title--pro::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.feed__block-title--pro::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 36px;
+  width: 67px;
+  height: 28px;
+  background-image: url(../img/icon-cat-pro.svg);
+  background-repeat: no-repeat;
+}
+
 
 .feed__block-description {
   margin: 0;
@@ -39,7 +85,6 @@
 }
 
 .feed__block-link {
-  position: relative;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -50,6 +95,16 @@
   text-transform: uppercase;
 }
 
+.feed__block-link::before {
+  content: "";
+  position: absolute;
+  left: 115px;
+  bottom: 24px;
+  width: 24px;
+  height: 11px;
+  background-image: url(../img/icon-right-arrow-long.svg);
+  background-repeat: no-repeat;
+}
 
 @media (min-width: 768px) {
   .feed {
@@ -66,7 +121,8 @@
     margin-bottom: 50px;
   }
 
-  .feed__block-title {
+  .feed__block-title,
+  .feed__block-title--pro {
     font-size: 36px;
     line-height: 38px;
     padding-top: 75px;
@@ -75,11 +131,12 @@
   }
 
   .feed__block-description {
-    width: 370px;
+    width: 380px;
     font-size: 16px;
     line-height: 24px;
     margin-left: 55px;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     border-bottom: none;
   }
 
@@ -87,6 +144,39 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: 55px;
+  }
+
+  .feed__block-title::before {
+    left: 446px;
+    top: 92px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .feed__block-title::after {
+    left: 476px;
+    top: 80px;
+    width: 140px;
+    height: 194px;
+  }
+
+  .feed__block-title--pro::before {
+    left: 446px;
+    top: 92px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .feed__block-title--pro::after {
+    left: 410px;
+    top: 136px;
+    width: 268px;
+    height: 112px;
+  }
+
+  .feed__block-link::before {
+    left: 184px;
+    bottom: 64px;
   }
 }
 
