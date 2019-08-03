@@ -5,8 +5,35 @@
 }
 
 .catalog-list__item-feed {
-  padding-top: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 25px;
+}
+
+.catalog-list__item-feed::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  width: 320px;
+  height: 1px;
+  background-color: #ededed;
+}
+
+.catalog-list__item-feed:first-child::after{
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 320px;
+  height: 1px;
+  background-color: #ededed;
+}
+
+.catalog-list__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .catalog-list__buy-feed {
@@ -38,6 +65,7 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .catalog-list__feed-decription {
