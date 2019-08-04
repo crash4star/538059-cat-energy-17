@@ -44,7 +44,9 @@
 }
 
 .main-nav__item,
-.main-nav__item--active {
+.main-nav__item--active,
+.main-nav__item-dark,
+.main-nav__item-dark--active-green {
   font-size: 20px;
   line-height: 20px;
   color: #111111;
@@ -79,7 +81,9 @@
   }
 
   .main-nav__item,
-  .main-nav__item--active {
+  .main-nav__item--active,
+  .main-nav__item-dark,
+  .main-nav__item-dark--active-green {
     font-size: 18px;
     font-weight: 400;
   }
@@ -108,13 +112,15 @@
     border-bottom: 2px solid #68b738;
     padding-bottom: 10px;
   }
+
+  .main-nav__item-dark--active-green {
+    border-bottom: 2px solid #68b738;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 1300px) {
   .main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 1300px;
     z-index: 1;
   }
@@ -122,6 +128,14 @@
   .main-nav__logo {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .main-nav__page-list {
+    width: 440px;
+  }
+
+  .main-nav__upper {
+    margin-right: 467px;
   }
 
   .main-nav__logo-tablet {
@@ -137,7 +151,17 @@
     color: #ffffff;
   }
 
+  .main-nav__item-dark,
+  .main-nav__item-dark--active-green {
+    color: #111111;
+  }
+
   .main-nav__item--active {
     border-bottom: 2px solid #ffffff;
+  }
+
+  .main-nav__item-dark--active-green {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #68b738;
   }
 }
