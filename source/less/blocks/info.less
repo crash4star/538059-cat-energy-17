@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #ffffff;
 }
 
 .info__work-title {
@@ -26,7 +25,11 @@
   list-style: none;
 }
 
-.info__features-item {
+.info__features-item--leaf,
+.info__features-item--powder,
+.info__features-item--dining,
+.info__features-item--clock {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
@@ -38,16 +41,90 @@
   margin-left: 80px;
 }
 
-.info__features-item::before {
+.info__features-item--leaf::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: -80px;
   width: 60px;
   height: 60px;
   background-color: #68b738;
 }
 
-.info__features-text {
+.info__features-item--powder::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.info__features-item--dining::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.info__features-item--clock::before {
+  content: "";
+  position: absolute;
+  left: -80px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.info__features-item--leaf::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -63px;
+  width: 26px;
+  height: 29px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-size: cover;
+}
+
+.info__features-item--powder::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -63px;
+  width: 29px;
+  height: 31px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-size: cover;
+}
+
+.info__features-item--dining::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -63px;
+  width: 23px;
+  height: 30px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-size: cover;
+}
+
+.info__features-item--clock::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -63px;
+  width: 23px;
+  height: 30px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-size: cover;
+}
+
+.info__features-text--1,
+.info__features-text--2,
+.info__features-text--3,
+.info__features-text--4 {
   margin: 0;
   padding: 0;
 }
@@ -60,32 +137,107 @@
   .info__work-title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
   }
 
   .info__features-list {
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: none;
   }
 
-  .info__features-item {
-    outline: 1px solid black;
+  .info__features-text--1,
+  .info__features-text--2,
+  .info__features-text--3,
+  .info__features-text--4 {
     position: relative;
-    width: 300px;
-    min-height: 115px;
-    margin: 0;
-    margin-bottom: 90px;
-    padding-top: 115px;
+    width: 75%;
   }
 
-  .info__features-item::before {
+  .info__features-item--leaf::before,
+  .info__features-item--powder::before,
+  .info__features-item--dining::before,
+  .info__features-item--clock::before {
+    left: 0;
     top: 0;
     width: 80px;
     height: 80px;
   }
 
-  .info__features-text {
-    width: 65%;
+  .info__features-item--leaf::after,
+  .info__features-item--powder::after,
+  .info__features-item--dining::after,
+  .info__features-item--clock::after {
+    top: 26px;
+    left: 26px;
+  }
+
+  .info__features-item--leaf,
+  .info__features-item--powder,
+  .info__features-item--dining,
+  .info__features-item--clock {
+    margin: 0;
+    width: 286px;
+    min-height: 115px;
+    padding-top: 115px;
+    margin-right: 110px;
+    margin-bottom: 90px;
+  }
+
+  .info__features-list li:nth-child(2n+2) {
+    margin-right: 0;
+  }
+
+  .info__features-text--1::before {
+    content: "1";
+    position: absolute;
+    left: 95px;
+    top: -155px;
+    right: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .info__features-text--2::before {
+    content: "2";
+    position: absolute;
+    left: 95px;
+    top: -155px;
+    right: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .info__features-text--3::before {
+    content: "3";
+    position: absolute;
+    left: 95px;
+    top: -155px;
+    right: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+
+  .info__features-text--4::before {
+    content: "4";
+    position: absolute;
+    left: 95px;
+    top: -155px;
+    right: 20px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
   }
 }
 
@@ -96,5 +248,39 @@
     width: 1220px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .info__features-list {
+    justify-content: space-between;
+  }
+
+  .info__features-text--1,
+  .info__features-text--2,
+  .info__features-text--3,
+  .info__features-text--4 {
+    width: 100%;
+  }
+
+  .info__features-item--leaf,
+  .info__features-item--powder,
+  .info__features-item--dining,
+  .info__features-item--clock {
+    margin-right: 0;
+  }
+
+  .info__features-item--leaf {
+    width: 185px;
+  }
+
+  .info__features-item--powder {
+    width: 200px;
+  }
+
+  .info__features-item--dining {
+    width: 200px;
+  }
+
+  .info__features-item--clock {
+    width: 225px;
   }
 }
