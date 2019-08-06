@@ -14,9 +14,13 @@
     <nav class="main-nav">
       <div class="main-nav__upper">
         <a class="main-nav__logo">
-          <img src="img/logo-mobile.svg" class="main-nav__logo-mobile" width="191" height="39" alt="Логотип Cat Energy">
-          <img src="img/logo-tablet.svg" class="main-nav__logo-tablet" width="173" height="58" alt="Логотип Cat Energy">
-          <img src="img/logo-desktop.svg" class="main-nav__logo-desktop" width="202" height="59" alt="Логотип Cat Energy">
+          <p class="main-nav__logo-wrapper">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" class="main-nav__logo-mobile" width="191" height="39" alt="Логотип Cat Energy">
+            </picture>
+          </p>
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <button class="main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button>
@@ -38,9 +42,13 @@
     <section class="commercial">
       <h2 class="commercial__big-headline">Функциональное питание для котов</h2>
       <p class="commercial__small-description">Занялся собой? Займись котом!</p>
-      <img src="img/index-can-mobile@1x.png" class="commercial__mobile-image" width="280" height="270" alt="Изображение банки корма">
-      <img src="img/index-can-tablet@1x.jpg" class="commercial__tablet-image" width="709" height="609" alt="Изображение банки корма">
-      <img src="img/index-can-desktop@1x.png" class="commercial__desktop-image" width="552" height="499" alt="Изображение банки корма">
+      <p class="commercial__image-wrapper">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" class="commercial__mobile-image" alt="Изображение банки корма">
+        </picture>
+      </p>
       <a href="#" class="commercial__choice-program">Подобрать программу</a>
     </section>
     <section class="feed">
